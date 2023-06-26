@@ -44,12 +44,24 @@ body {
   background: #ddd;
   color: black;
 }
+
+@media screen and (orientation: portrait) {
+  /*竖屏 css*/
+}
+
+@media screen and (orientation: landscape) {
+  /*横屏 css*/
+div.content {
+  visibility: hidden;
+}
+}
+
 </style>
 </head>
 <body>
 
-<video autoplay muted loop id="myVideo">
-  <source src="啊 朋友再见Bella ciao.mp4" type="video/mp4">
+<video autoplay loop id="myVideo">
+  <source src="Bella ciao.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
